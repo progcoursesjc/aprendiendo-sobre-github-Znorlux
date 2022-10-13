@@ -52,7 +52,7 @@ class Calculadora:
                 except ValorIncorrecto:
                     print("Solo puedes ingresar valores numericos")
                     self.ingresar_datos()
-                except Division0Error:
+                except ZeroDivisionError:
                     print("No puedes dividir por 0, vuelve a intentarlo")
                     self.ingresar_datos()
                 
