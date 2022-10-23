@@ -34,7 +34,7 @@ public class Main_V3{
             System.out.println("==================");
             input_palabra = palabra_ingresada.nextLine().toLowerCase(); //Leemos y guardamos la palabra ingresada por el usuario y la ponemos en minuscula
             System.out.println("==================");
-            while(input_palabra.length() != answerChoosen.length()){ //Si la palabra no tiene la cantidad de letras de la respuesta, entonces no se le permitirá continuar, y su intento no sumará
+            while(input_palabra.length() < answerChoosen.length()){ //Si la palabra no tiene la cantidad de letras de la respuesta, entonces no se le permitirá continuar, y su intento no sumará
                 System.out.println("Debes ingresar una palabra de " + lenght_answerChoosen + " letras, vuelve a intentarlo");
                 input_palabra = palabra_ingresada.nextLine().toLowerCase();
             }
